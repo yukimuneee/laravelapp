@@ -14,10 +14,10 @@
     <li>{{$item}}
     @endforeach
     </ol>
-    <form method='POST' action="/hello">
+    <!-- <form method='POST' action="/hello">
       @csrf
       <input type='text' name="msg">
       <input type='submit' >
-    </form>
+    </form> -->
 </body>
 </html>
