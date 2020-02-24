@@ -13,7 +13,8 @@ class HelloController extends Controller
         // $data = [
         //     'msg'=>'お名前を入力してください。',
         // ];
-        return view('hello.index');
+        $data = ['one', 'two', 'three', 'four', 'five'];
+        return view('hello.index', ['data'=>$data]);
 
     }
     public function post(Request $request)
