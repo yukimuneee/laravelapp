@@ -11,7 +11,6 @@ class HelloController extends Controller
     public function index()
     {
         // $data = [
-            
         //     'msg'=>'お名前を入力してください。',
         // ];
         $data = ['one', 'two', 'three', 'four', 'five'];
