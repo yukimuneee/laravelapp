@@ -8,17 +8,16 @@
 </head>
 <body>
     <h1>Blade/Index</h1>
-    <p>&#064;foreachディレクティブの例</p>
-    <ol>
-    @php
-    $counter = 0;
-    @endphp
-    @while ($counter < count($data))
-    <li>{{$data[$counter]}}</li>
-    @php
-    $counter++;
-    @endphp
-    @endwhile
+    <p>&#064;forディレクティブの例</p>
+    @foreach ($data as $item)
+    @if ($loop->first)
+        @continue
+    @elseif ($i <= 20)
+    <li>No,{{$i}}</li>
+    @else
+        @break
+    @endif
+    @endfor
     </ol>
 </body>
 </html>
