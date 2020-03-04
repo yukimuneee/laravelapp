@@ -10,8 +10,7 @@ class HelloServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer(
-            'hello.index', 'App\Http\Composers
-            \HelloComposer'
+            'hello.index', 'App\Http\Composers\HelloComposer'
         );
     }
 }
